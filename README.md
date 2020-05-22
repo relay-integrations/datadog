@@ -1,6 +1,11 @@
-# Relay Integration Template
+# Datadog Integration
 
-This repository serves as a template for creating new Relay integration
-repositories. You can [create a new
-repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
-from this template.
+## Actions
+
+### Triggers
+
+| Name | Description |
+|------|-------------|
+| [event-fired](actions/triggers/event-fired/trigger.yaml) | Handles incoming Datadog events |
+
+

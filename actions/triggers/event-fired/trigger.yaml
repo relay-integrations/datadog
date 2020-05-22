@@ -1,0 +1,10 @@
+apiVersion: integration/v1
+kind: Trigger
+name: event-fired
+version: 1
+summary:  Datadog Event Trigger
+description: |
+  This trigger handles Datadog events and notifications
+
+responders:
+- webhook
