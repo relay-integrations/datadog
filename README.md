@@ -4,7 +4,7 @@
 
 | Type | Name | Description |
 |------|-------------|-----| 
-| Trigger | [event-fired](actions/triggers/event-fired/trigger.yaml) | Handles incoming Datadog events |
+| Trigger | [event-fired](actions/triggers/event-fired) | Handles incoming Datadog events |
 
 
 ## Contributing
