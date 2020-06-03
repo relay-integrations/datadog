@@ -47,7 +47,7 @@ triggers:
       body: !Data body
 ```
 
-## Example Data
+## Example Raw Data
 
 ```
 {
