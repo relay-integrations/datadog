@@ -1,6 +1,7 @@
 apiVersion: container/v1
 kind: StepContainer
 inherit: {from: sdk, name: python.v1}
+name: datadog-trigger-event-fired
 title: Datadog Event Trigger
 description: >
   This trigger handles Datadog events and notifications

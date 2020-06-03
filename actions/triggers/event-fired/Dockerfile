@@ -4,9 +4,9 @@ FROM python:3-alpine
 RUN apk --no-cache add bash ca-certificates curl git jq openssh && update-ca-certificates
 RUN pip --no-cache-dir install "https://packages.nebula.puppet.net/sdk/support/python/v1/nebula_sdk-1-py3-none-any.whl"
 RUN pip --no-cache-dir install quart
-COPY "./server.py" "/nebula/step-event-fired.py"
+COPY "./server.py" "/nebula/step-datadog-trigger-event-fired.py"
 ENTRYPOINT []
-CMD ["python3", "/nebula/step-event-fired.py"]
+CMD ["python3", "/nebula/step-datadog-trigger-event-fired.py"]
 
 LABEL "org.opencontainers.image.title"="Datadog Event Trigger"
 LABEL "org.opencontainers.image.description"="This trigger handles Datadog events and notifications"
