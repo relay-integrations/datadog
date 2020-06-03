@@ -38,9 +38,9 @@ done
 shift $(( OPTIND - 1 ))
 
 
-$DOCKER $DOCKER_ARGS build $DOCKER_BUILD_ARGS --tag sdk.nebula.localhost/intermediate/aace728b8dab/event-fired --file Dockerfile .
+$DOCKER $DOCKER_ARGS build $DOCKER_BUILD_ARGS --tag sdk.nebula.localhost/intermediate/5760ff3a8e8f/datadog-trigger-event-fired --file Dockerfile .
 
 for TAG in ${TAGS[@]+"${TAGS[@]}"}; do
-  $DOCKER $DOCKER_ARGS tag sdk.nebula.localhost/intermediate/aace728b8dab/event-fired "sdk.nebula.localhost/generated/event-fired:${TAG}" && \
-    printf "# Tagged %s:%s\n" sdk.nebula.localhost/generated/event-fired "${TAG}"
+  $DOCKER $DOCKER_ARGS tag sdk.nebula.localhost/intermediate/5760ff3a8e8f/datadog-trigger-event-fired "relaysh/datadog-trigger-event-fired:${TAG}" && \
+    printf "# Tagged %s:%s\n" relaysh/datadog-trigger-event-fired "${TAG}"
 done

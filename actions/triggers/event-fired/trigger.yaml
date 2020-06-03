@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Trigger
-name: event-fired
+name: datadog-trigger-event-fired
 version: 1
 summary:  Datadog Event Trigger
 description: |
