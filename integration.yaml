@@ -5,8 +5,8 @@ channel: stable
 version: v20200522
 summary: Datadog
 license: Apache-2.0
-homepage: https://github.com/relay-integrations/datadog
-source: https://github.com/relay-integrations/datadog
+homepage: https://github.com/relay-integrations/relay-datadog
+source: https://github.com/relay-integrations/relay-datadog
 
 description: |
   Integration with Datadog monitoring services.

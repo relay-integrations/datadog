@@ -4,7 +4,7 @@
 
 | Type | Name | Description |
 |------|-------------|-----| 
-| Trigger | [event-fired](/triggers/event-fired) | Handles incoming Datadog events |
+| Trigger | [datadog-trigger-event-fired](/triggers/datadog-trigger-event-fired) | Handles incoming Datadog events |
 
 
 ## Contributing
