@@ -8,8 +8,8 @@ from relay_sdk import Interface, Dynamic as D
 relay = Interface()
 
 options = {
-  'api_key': relay.get(D.datadog.connection.api_key),
-  'app_key': relay.get(D.datadog.connection.app_key)
+  'api_key': relay.get(D.api_key),
+  'app_key': relay.get(D.app_key)
 }
 
 initialize(**options)
