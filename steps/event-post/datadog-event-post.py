@@ -17,8 +17,8 @@ initialize(**options)
 event_payload = {
   'source_type_name': 'puppet',
   'title': relay.get(D.event_title),
-  'text': relay_get(D.event_text),
-  'alert_type': relay_get(D.event_type)
+  'text': relay.get(D.event_text),
+  'alert_type': relay.get(D.event_type)
 }
 
 api.Event.create(event_payload)
