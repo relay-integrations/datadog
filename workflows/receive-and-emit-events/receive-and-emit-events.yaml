@@ -1,0 +1,33 @@
+parameters:
+  event_payload:
+    description: The webhook payload recieved from Datadog
+  event_title:
+    description: The title of the event to send
+    default: An event from Relay
+  event_text:
+    description: The body of the event to send
+    default: Override this from the body
+  event_type:
+    description: One of error, warning, info, success
+    default: info
+
+triggers:
+  - name: receive-from-datadog
+    source:
+      type: webhook
+      image: relaysh/datadog-trigger-event-fired
+    binding:
+      parameters:
+        event_payload: !Data event_payload
+        event_title: !Data event.title
+        event_text: !Data event.text
+        event_type: !Data event.type
+
+steps:
+  - name: roundtrip-event
+    image: relaysh/datadog-step-event-post
+    spec:
+      connection: !Connection {type: "datadog", name: "my-datadog-keys"}
+      event_title: !Fn.concat ["From Relay: ", !Parameter event_title]
+      event_text: "This came from relay"
+      event_type: "success"
