@@ -1,0 +1,16 @@
+apiVersion: integration/v1
+kind: Step
+name: datadog-step-event-post
+version: 1
+summary: This step posts an event to the Datadog event stream.
+
+description: |
+  This requires a datadog connection with API and User keys.
+  Workflows should provide the following parameters in the spec:
+    event_title: (string) the title for the event
+    event_text: (string) the body of the event
+    event_type: (string) one of: error, warning, info, success
+
+build:
+  apiVersion: build/v1
+  kind: Docker
