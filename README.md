@@ -1,10 +1,16 @@
 # Datadog Integration
 
-## Actions
+## Steps
 
-| Type | Name | Description |
-|------|-------------|-----| 
-| Trigger | [datadog-trigger-event-fired](/triggers/datadog-trigger-event-fired) | Handles incoming Datadog events |
+| Name | Description |
+|------|-------------|
+| [datadog-step-send-event](/steps/datadog-step-send-event) | Posts an event to the Datadog event stream |
+
+## Triggers
+
+| Name | Description |
+|------|-------------|
+| [datadog-trigger-event-fired](/triggers/datadog-trigger-event-fired) | Handles incoming Datadog events |
 
 
 ## Contributing
