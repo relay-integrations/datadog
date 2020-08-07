@@ -21,5 +21,5 @@ r = requests.post(url, params={'api_key': api_key}, json=event_payload)
 
 print('Emitted event to Datadog API, got response: ', r.text)
 
-if r.status.code != requests.codes.ok:
+if r.status_code != requests.codes.ok:
   exit(1)
