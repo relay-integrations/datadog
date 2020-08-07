@@ -1,26 +1,23 @@
 #!/usr/bin/env python
-
 # posts an event to datadog from relay
 
-from datadog import initialize, api
+import requests, os
 from relay_sdk import Interface, Dynamic as D
 
 relay = Interface()
 
-options = {
-  'api_key': relay.get(D.connection.apiKey),
-  'app_key': relay.get(D.connection.applicationKey)
-}
-
-initialize(**options)
+api_key = relay.get(D.connection.apiKey),
 
 event_payload = {
-  'source_type_name': 'puppet',
+  'source_type_name': 'relay',
   'title': relay.get(D.event_title),
   'text': relay.get(D.event_text),
   'alert_type': relay.get(D.event_type)
 }
 
-api.Event.create(event_payload)
+r = requests.post(url, params={'api_key': api_key}, json=event_payload)
 
-print('Emitted event to Datadog API: {}'.format(event_payload))
+print('Emitted event to Datadog API, got response: ', r.text)
+
+if r.status.code != requests.codes.ok:
+  exit(1)
