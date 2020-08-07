@@ -15,6 +15,8 @@ event_payload = {
   'alert_type': relay.get(D.event_type)
 }
 
+url = 'https://api.datadoghq.com/api/v1/events'
+
 r = requests.post(url, params={'api_key': api_key}, json=event_payload)
 
 print('Emitted event to Datadog API, got response: ', r.text)
