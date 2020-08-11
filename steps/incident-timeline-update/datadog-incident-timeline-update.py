@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# posts an event to datadog from relay
+# updates an incident timeline to datadog from relay
 
 import requests, os
 from relay_sdk import Interface, Dynamic as D
