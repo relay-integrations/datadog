@@ -26,6 +26,7 @@ event_payload = {
         'content': timeline_cell_content
       }
     }
+  }
 }
 
 url = 'https://api.datadoghq.com/api/v2/incidents/' + incident_id + '/timeline'

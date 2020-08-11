@@ -4,7 +4,9 @@
 
 | Name | Description |
 |------|-------------|
-| [datadog-step-send-event](/steps/datadog-step-send-event) | Posts an event to the Datadog event stream |
+| [datadog-step-send-event](/steps/send-event) | Posts an event to the Datadog event stream |
+| [datadog-step-incident-timeline-update](/steps/incident-timeline-update) | Updates a Datadog Incident with a new timeline cell |
+| [datadog-step-incident-extract-id](/steps/incident-extract-id) | Helper step to extract an incident UID from the public, friendly name |
 
 ## Triggers
 
