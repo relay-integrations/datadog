@@ -30,7 +30,7 @@ incidents = r.json()
 for incident in incidents['data']:
   if incident['attributes']['public_id'] == public_id:
     incident_id = incident['id']
-    print('Matched ', public_name, ' to ', incident_id)
+    print('Matched ', public_id, ' to ', incident_id)
 
 if incident_id == 'not_found':
   print("Reached end of incidents with no match")
