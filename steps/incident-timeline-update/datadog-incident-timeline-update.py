@@ -10,8 +10,10 @@ relay = Interface()
 incident_id = relay.get(D.incident_id)
 
 # these are encrypted in the Connection
-api_key = relay.get(D.connection.apiKey)
-app_key = relay.get(D.connection.applicationKey)
+headers = {
+  'DD-API-KEY': relay.get(D.connection.apiKey),
+  'DD-APPLICATION-KEY': relay.get(D.connection.applicationKey),
+}
 
 # content of the message to post, in markdown
 timeline_cell_content = relay.get(D.timeline_cell_content)
@@ -31,7 +33,7 @@ event_payload = {
 
 url = 'https://api.datadoghq.com/api/v2/incidents/' + incident_id + '/timeline'
 
-r = requests.post(url, params={'api_key': api_key, 'app_key': app_key}, json=event_payload)
+r = requests.post(url, headers=headers, json=event_payload)
 
 print('Emitted event to Datadog API, got response: ', r.text)
 
