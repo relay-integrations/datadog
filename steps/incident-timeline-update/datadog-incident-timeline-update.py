@@ -22,7 +22,7 @@ event_payload = {
   'data': {
     'type': 'incident_timeline_cells',
     'attributes': {
-      'source': 'relay',
+      'source': 'unknown',
       'cell_type': 'markdown',
       'content': {
         'content': timeline_cell_content
