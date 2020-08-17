@@ -1,0 +1,18 @@
+parameters:
+  public_id:
+    description: Numeric part of the "friendly" id of the Datadog Incident to update; for IR-3 use "3"
+  timeline_cell_content:
+    description: Markdown-formatted text to update the Incident timeline with
+
+steps:
+  - name: convert-incident-id
+    image: relaysh/datadog-step-incident-extract-id
+    spec:
+      connection: !Connection {type: datadog, name: my-datadog-keys }
+      public_id: !Parameter public_id
+  - name: update-timeline
+    image: relaysh/datadog-step-incident-timeline-update
+    spec:
+      connection: !Connection {type: datadog, name: my-datadog-keys }
+      incident_id: !Output {from: convert-incident-id, name: incident_id}
+      timeline_cell_content: !Parameter timeline_cell_content
