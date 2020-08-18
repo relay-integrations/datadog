@@ -4,13 +4,11 @@ name: datadog-step-incident-timeline-update
 version: 1
 summary: This step adds a timeline cell to a Datadog Incident.
 
-description: |This requires a Datadog connection with API and User keys.
-
-Workflows should provide the following parameters in the spec:
-
-* `incident_id`: (string) the unique internal identifier of the Incident to update. This is identified by `data.id` in responses from the Datadog `/v2/incidents` endpoint.
-* `timeline_cell_content`: (string) Markdown-formatted text that represents the content of the timeline cell
+description: This requires a Datadog connection with API and User keys.
 
 build:
   apiVersion: build/v1
   kind: Docker
+
+publish:
+  repository: relaysh/datadog-step-incident-timeline-update

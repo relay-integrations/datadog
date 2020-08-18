@@ -7,4 +7,7 @@ description: |
   This trigger handles Datadog events and notifications
 
 responders:
-- webhook
+  - webhook
+
+publish:
+  repository: relaysh/datadog-trigger-event-fired

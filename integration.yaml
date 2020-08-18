@@ -9,9 +9,12 @@ homepage: https://github.com/relay-integrations/relay-datadog
 source: https://github.com/relay-integrations/relay-datadog
 
 description: |
-  Integration with Datadog monitoring services.
+  Datadog is a monitoring service for cloud-scale applications, providing monitoring of servers, databases, tools, and services, through a SaaS-based data analytics platform.
 
 owner:
   name: Puppet, Inc.
   email: relay@puppet.com
   url: https://puppet.com
+
+tags:
+  - monitoring
