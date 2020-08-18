@@ -9,5 +9,9 @@ description: |
 responders:
   - webhook
 
+build:
+  apiVersion: build/v1
+  kind: Docker
+
 publish:
   repository: relaysh/datadog-trigger-event-fired
