@@ -2,10 +2,9 @@ apiVersion: integration/v1
 kind: Step
 name: datadog-step-incident-extract-id
 version: 1
-summary: This step extracts an internal Incident ID, given its friendly id
+summary: Extract Datadog Incident ID
 
-description: This requires a Datadog connection with API and User keys.
-
+description: This utility step extracts an internal Incident ID, given its friendly id
 build:
   apiVersion: build/v1
   kind: Docker

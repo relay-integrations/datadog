@@ -2,10 +2,8 @@ apiVersion: integration/v1
 kind: Step
 name: datadog-step-event-post
 version: 1
-summary: This step posts an event to the Datadog event stream.
-
-description: |
-  This requires a datadog connection with API and User keys.
+summary: Post a Datadog event 
+description: This step posts an event to the Datadog event stream.
 
 build:
   apiVersion: build/v1
