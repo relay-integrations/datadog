@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Step
-name: datadog-step-incident-extract-id
+name: incident-extract-id
 version: 1
 summary: Extract Datadog Incident ID
 

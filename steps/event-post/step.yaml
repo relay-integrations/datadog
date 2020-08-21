@@ -1,8 +1,8 @@
 apiVersion: integration/v1
 kind: Step
-name: datadog-step-event-post
+name: event-post
 version: 1
-summary: Post a Datadog event 
+summary: Post a Datadog event
 description: This step posts an event to the Datadog event stream.
 
 build:

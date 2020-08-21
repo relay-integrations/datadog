@@ -1,4 +1,4 @@
-# datadog-step-incident-extract-id
+# incident-extract-id
 
 This step extracts an internal ID for a Datadog Incident, given a friendly name.
 

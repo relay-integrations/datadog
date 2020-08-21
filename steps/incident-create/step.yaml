@@ -1,14 +1,14 @@
 apiVersion: integration/v1
 kind: Step
-name: datadog-step-incident-timeline-update
+name: incident-create
 version: 1
-summary: This step adds a timeline cell to a Datadog Incident.
+summary: Create an incident
 
-description: This requires a Datadog connection with API and User keys.
+description: This step creates a new Datadog Incident.
 
 build:
   apiVersion: build/v1
   kind: Docker
 
 publish:
-  repository: relaysh/datadog-step-incident-timeline-update
+  repository: relaysh/datadog-step-incident-create

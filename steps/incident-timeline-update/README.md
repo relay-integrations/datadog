@@ -1,4 +1,4 @@
-# datadog-step-incident-timeline-update
+#incident-timeline-update
 
 This step adds a timeline cell to a Datadog Incident.
 

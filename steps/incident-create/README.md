@@ -1,4 +1,4 @@
-# datadog-step-incident-create
+# incident-create
 
 This step creates a new Datadog Incident.
 
