@@ -11,3 +11,15 @@ build:
 
 publish:
   repository: relaysh/datadog-step-event-post
+examples:
+- summary: Post event to event stream
+  content:
+    apiVersion: v1
+    kind: Step
+    name: send-event
+    image: relaysh/datadog-step-event-post
+    spec:
+      connection:  !Connection {type: "datadog", name: "my-datadog-keys"}
+      event_title: !Parameter event_title
+      event_text:  !Parameter event_text
+      event_type:  !Parameter event_type

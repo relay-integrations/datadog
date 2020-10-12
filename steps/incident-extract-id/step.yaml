@@ -11,3 +11,14 @@ build:
 
 publish:
   repository: relaysh/datadog-step-incident-extract-id
+
+examples:
+- summary: Extract internal ID for Datadog Incident
+  content:
+    apiVersion: v1
+    kind: Step
+    name: extract-id
+    image: relaysh/datadog-step-incident-extract-id
+    spec:
+      connection:  !Connection {type: "datadog", name: "my-datadog-keys"}
+      public_id:  !Parameter public_id
