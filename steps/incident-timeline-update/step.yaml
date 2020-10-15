@@ -10,3 +10,15 @@ build:
 
 publish:
   repository: relaysh/datadog-step-incident-timeline-update
+  
+examples:
+- summary: Add a timeline update to incident
+  content:
+    apiVersion: v1
+    kind: Step
+    name: timeline-update
+    image: relaysh/datadog-step-incident-timeline-update
+    spec:
+      connection:  !Connection {type: "datadog", name: "my-datadog-keys"}
+      timeline_cell_content: !Parameter timeline_cell_content
+      incident_id:  !Parameter incident_id
