@@ -19,7 +19,7 @@ publish:
 examples:
 - summary: When a Datadog event is fired
   content:
-    apiVersion: 1
+    apiVersion: v1
     kind: Trigger
     name: datadog-event
     source:
