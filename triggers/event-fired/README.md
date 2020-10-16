@@ -15,38 +15,6 @@ For more information about Datadog webhooks, check out the [documentation](https
 | date | datetime | Date event occurred |
 | id | integer | Event ID |  
 
-## Example Trigger
-
-```
-parameters:
-  body:
-    default: ""
-  last_updated:
-    default: ""
-  event_type:
-    default: ""
-  title:
-    default: ""
-  date:
-    default: ""
-  id:
-    default: ""
-
-triggers:
-- name: datadog-event
-  source:
-    type: webhook
-    image: relaysh/datadog-trigger-event-fired:latest
-  binding:
-    parameters:
-      id: !Data id
-      last_updated: !Data last_updated
-      event_type: !Data event_type
-      title: !Data title
-      date: !Data date
-      body: !Data body
-```
-
 ## Example Raw Data
 
 ```
