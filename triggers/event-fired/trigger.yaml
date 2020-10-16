@@ -15,3 +15,21 @@ build:
 
 publish:
   repository: relaysh/datadog-trigger-event-fired
+
+examples:
+- summary: When a Datadog event is fired
+  content:
+    apiVersion: v1
+    kind: Trigger
+    name: datadog-event
+    source:
+      type: webhook
+      image: relaysh/datadog-trigger-event-fired
+    binding:
+      parameters:
+        id: !Data id
+        last_updated: !Data last_updated
+        event_type: !Data event_type
+        title: !Data title
+        date: !Data date
+        body: !Data body
