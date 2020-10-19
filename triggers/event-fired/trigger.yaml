@@ -9,6 +9,11 @@ description: |
 responders:
   - webhook
 
+schemas:
+  event:
+    source: file
+    file: event.schema.json
+
 build:
   apiVersion: build/v1
   kind: Docker

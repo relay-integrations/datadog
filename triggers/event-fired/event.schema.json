@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "body": {
+        "type": "string",
+        "description": "Body text of the event"
+      },
+      "last_updated": {
+        "type": "string",
+        "description": "Last time event was updated",
+        "format": "date-time"
+      },
+      "event_type": {
+        "type": "string",
+        "description": "Type of event"
+      },
+      "title": {
+        "type": "string",
+        "description": "Title of event"
+      },
+      "date": {
+        "type": "string",
+        "description": "Date event occurred"
+      },
+      "org": {
+        "type": "object",
+        "description": "Organization",
+        "properties": {
+          "id":{
+            "type": "integer",
+            "description": "Organization ID"
+          },
+          "name":{
+            "type": "string",
+            "description": "Organization name"
+          }
+        },
+        "additionalProperties": false
+      },
+      "id": {
+        "type": "integer",
+        "description": "Event ID"
+      }
+    },
+    "required": [
+      "body",
+      "event_type",
+      "last_updated",
+      "title",
+      "date",
+      "org",
+      "id"
+    ],
+    "additionalProperties": false
+  }
