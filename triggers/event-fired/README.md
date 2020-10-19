@@ -18,16 +18,3 @@ For more information about Datadog webhooks, check out the [documentation](https
 - Configure your webhook (e.g. "@webhook-relay")
 - Click "Save" 
 ![Configure a webhook integration](../../media/datadog-configure.gif)
-
-
-## Data Emitted
-
-| Name | Data type | Description |
-|------|-----------|-------------|
-| body | string | Body text of the event |
-| last_updated | datetime | Last time the event was updated |
-| event_type | string | Type of event |
-| title | string | Title of event |
-| date | datetime | Date event occurred |
-| org  | map | Organization |
-| id | integer | Event ID | 

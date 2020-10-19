@@ -8,7 +8,8 @@
       },
       "last_updated": {
         "type": "string",
-        "description": "Last time event was updated"
+        "description": "Last time event was updated",
+        "format": "date-time"
       },
       "event_type": {
         "type": "string",
