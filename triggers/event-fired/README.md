@@ -10,11 +10,9 @@ For more information about Datadog webhooks, check out the [documentation](https
 - Go to your Datadog dashboard and install the webhooks integration (if not already installed)
 - Create a "New" webhook and supply a name (e.g. "Relay")
 - Copy the webhook URL from your Relay workflow and paste it into the "URL" field
-![Create a webhook integration](../../media/datadog-webhook.gif)
 
 ### Step 2: Configure a monitor with your webhook 
 - Navigate to your chosen alert [monitor](https://docs.datadoghq.com/monitors/monitor_types/)
 - Click Edit and scroll down to the "Say what's happening" section 
 - Configure your webhook (e.g. "@webhook-relay")
 - Click "Save" 
-![Configure a webhook integration](../../media/datadog-configure.gif)
