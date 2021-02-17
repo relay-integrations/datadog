@@ -16,7 +16,7 @@ async def webhook():
 
     for key, value in request.headers.items():
         if key.startswith("X-Datadog-"):
-            relay.events.emit(data)
+            relay.events.emit(data, key=data['id'])
             return {'success': True}
 
     return {'message': 'not a valid Datadog event'}, 400, {}
