@@ -1,6 +1,6 @@
 # event-fired 
 
-This [Datadog](https://datadog.com) trigger fires when an event is fired.
+This [Datadog](https://www.datadoghq.com) trigger fires when an event is fired.
 
 For more information about Datadog webhooks, check out the [documentation](https://docs.datadoghq.com/integrations/webhooks/).
 
