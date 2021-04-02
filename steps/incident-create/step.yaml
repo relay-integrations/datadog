@@ -4,7 +4,7 @@ name: incident-create
 version: 1
 summary: Create an incident
 
-description: This step creates a new Datadog Incident.
+description: Creates a new Datadog Incident.
 
 build:
   apiVersion: build/v1
