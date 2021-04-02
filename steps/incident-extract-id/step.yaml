@@ -4,7 +4,7 @@ name: incident-extract-id
 version: 1
 summary: Extract Datadog Incident ID
 
-description: This utility step extracts an internal Incident ID, given its friendly id
+description: Extracts an internal Incident ID, given its friendly id.
 build:
   apiVersion: build/v1
   kind: Docker
