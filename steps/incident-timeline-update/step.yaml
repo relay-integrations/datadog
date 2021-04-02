@@ -3,7 +3,7 @@ kind: Step
 name: incident-timeline-update
 version: 1
 summary: Update Datadog Incident Timeline
-description: This step adds a timeline cell to a Datadog Incident.
+description: Adds a timeline cell to a Datadog Incident.
 build:
   apiVersion: build/v1
   kind: Docker
