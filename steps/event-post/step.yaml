@@ -3,7 +3,7 @@ kind: Step
 name: event-post
 version: 1
 summary: Post a Datadog event
-description: This step posts an event to the Datadog event stream.
+description: Posts an event to the Datadog event stream.
 
 build:
   apiVersion: build/v1
