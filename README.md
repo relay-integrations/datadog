@@ -37,3 +37,5 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 ### License
 
 As indicated by the repository, this project is licensed under Apache 2.0.
+
+![*](/media/test.gif)
