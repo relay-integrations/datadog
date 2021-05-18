@@ -16,5 +16,3 @@ For more information about Datadog webhooks, check out the [documentation](https
 - Click Edit and scroll down to the "Say what's happening" section
 - Configure your webhook (e.g. "@webhook-relay")
 - Click "Save"
-
-![*](/media/test.gif)
