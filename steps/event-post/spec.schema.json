@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "event_title": {
+        "type": "string",
+        "description": "the title for the event"
+      },
+      "event_text": {
+        "type": "string",
+        "description": "the body of the event"
+      },
+      "event_type": {
+        "type": "string",
+        "description": "one of: error, warning, info, success"
+      }
+    },
+    "additionalProperties": false
+  }
