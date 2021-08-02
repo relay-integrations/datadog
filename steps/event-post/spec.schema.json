@@ -31,5 +31,10 @@
         "enum": ["error", "warning", "info", "success"]
       }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+      "connection",
+      "event_title",
+      "event_text"
+    ]
   }
