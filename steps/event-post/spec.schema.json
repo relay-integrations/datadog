@@ -27,7 +27,8 @@
       },
       "event_type": {
         "type": "string",
-        "description": "one of: error, warning, info, success"
+        "description": "one of: error, warning, info, success",
+        "enum": ["error", "warning", "info", "success"]
       }
     },
     "additionalProperties": false
