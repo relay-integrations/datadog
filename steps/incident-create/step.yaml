@@ -12,3 +12,8 @@ build:
 
 publish:
   repository: relaysh/datadog-step-incident-create
+
+schemas:
+  spec: 
+    source: file
+    file: spec.schema.json
