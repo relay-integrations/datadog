@@ -6,12 +6,12 @@ from relay_sdk import Interface, Dynamic as D
 
 relay = Interface()
 
-api_key = relay.get(D.connection.apiKey),
+api_key = relay.get(D.connection.apiKey)
+application_key = relay.get(D.connection.applicationKey)
 
 payload = {
   'data': {
     'attributes': {
-      'customer_impacted': relay.get(D.customer_impacted),
       'title': relay.get(D.title)
     },
     'type': 'incidents'
@@ -20,8 +20,12 @@ payload = {
 
 url = 'https://api.datadoghq.com/api/v2/incidents'
 
-r = requests.post(url, params={'api_key': api_key}, json=payload)
+r = requests.post(url, headers={'DD-API-KEY': api_key, 'DD-APPLICATION-KEY': application_key}, json=payload)
 
 print('Sent request to Datadog API, got response: ', r.text)
 
 r.raise_for_status()
+
+incident = r.json()
+
+relay.outputs.set("incident_id", incident['data']['id'])
