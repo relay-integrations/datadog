@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "connection": {
+      "type": "object",
+      "description": "Datadog connection",
+      "x-relay-connectionType": "datadog",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API Key"
+        },
+        "applicationKey": {
+          "type": "string",
+          "description": "application Key"
+        }
+      }
+    },
+    "incident_id": {
+      "type": "string",
+      "description": "the unique internal identifier of the Incident to update"
+    },
+    "timeline_cell_content": {
+      "type": "string",
+      "description": "Markdown-formatted text that represents the content of the timeline cell"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "connection",
+    "incident_id",
+    "timeline_cell_content"
+  ]
+}
