@@ -23,7 +23,7 @@ examples:
       event_title: !Parameter event_title
       event_text:  !Parameter event_text
       event_type:  !Parameter event_type
-      
+
 schemas:
   spec: 
     source: file
