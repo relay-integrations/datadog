@@ -2,7 +2,7 @@
 
 This step extracts an internal ID for a Datadog Incident, given a friendly name.
 
-This requires a Datadog connection with API and User keys.
+This requires a Datadog connection with API and Application keys.
 
 It's useful because the API requires IDs for operations on existing incidents, but these IDs are not exposed to users, only the "public name".
 
