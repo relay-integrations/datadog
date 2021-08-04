@@ -22,3 +22,11 @@ examples:
     spec:
       connection:  !Connection {type: "datadog", name: "my-datadog-keys"}
       public_id:  !Parameter public_id
+
+schemas:
+  spec: 
+    source: file
+    file: spec.schema.json
+  outputs:
+    source: file
+    file: outputs.schema.json

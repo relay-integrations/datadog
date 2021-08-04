@@ -22,3 +22,8 @@ examples:
       connection:  !Connection {type: "datadog", name: "my-datadog-keys"}
       timeline_cell_content: !Parameter timeline_cell_content
       incident_id:  !Parameter incident_id
+
+schemas:
+  spec: 
+    source: file
+    file: spec.schema.json

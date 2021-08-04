@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "connection": {
+      "type": "object",
+      "description": "Datadog connection",
+      "x-relay-connectionType": "datadog",
+      "properties": {
+        "apiKey": {
+          "type": "string",
+          "description": "API Key"
+        },
+        "applicationKey": {
+          "type": "string",
+          "description": "application Key"
+        }
+      }
+    },
+    "event_title": {
+      "type": "string",
+      "description": "the title for the event"
+    },
+    "event_text": {
+      "type": "string",
+      "description": "the body of the event"
+    },
+    "event_type": {
+      "type": "string",
+      "description": "one of: error, warning, info, success",
+      "enum": [
+        "error",
+        "warning",
+        "info",
+        "success"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "connection",
+    "event_title",
+    "event_text"
+  ]
+}
