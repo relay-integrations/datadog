@@ -2,7 +2,7 @@
 
 This step posts an event to the Datadog event stream.
 
-This requires a datadog connection with API and User keys.
+This requires a datadog connection with API and Appplication keys.
 
 Workflows should provide the following parameters in the spec:
 
