@@ -2,7 +2,7 @@
 
 This step creates a new Datadog Incident.
 
-This requires a Datadog connection with API and Application keys.
+This requires a Datadog connection with API and application keys.
 
 Workflows should provide the following parameters in the spec:
 

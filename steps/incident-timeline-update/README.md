@@ -2,7 +2,7 @@
 
 This step adds a timeline cell to a Datadog Incident.
 
-This requires a Datadog connection with API and User keys.
+This requires a Datadog connection with API and application keys.
 
 Workflows should provide the following parameters in the spec:
 
